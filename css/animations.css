@@ -1,0 +1,45 @@
+@keyframes pulse {
+	from {background: rgba(255, 255, 255, 1);}
+  	to {background: rgba(0, 0, 0, 0);}
+}
+
+.pulse {
+	animation-name: pulse;
+ 	animation-duration: 2s;
+ 	animation-direction: alternate-reverse;
+ 	animation-timing-function: ease-out;
+ 	animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+    from { right: -325px ; }
+  	to { right: 0 ; }
+}
+
+.slideIn {
+  animation-duration: 0.2s;
+  animation-name: slideIn;
+  animation-timing-function: ease-out;
+
+  position: absolute !important;
+  display: flex !important; 
+  top: 20px !important;
+  right: 0 !important;
+}
+
+@keyframes slideOut {
+    from { right: 0px ; }
+  	to { right: -325px; }
+}
+
+.slideOut {
+  animation-duration: 0.2s;
+  animation-name: slideOut;
+  animation-timing-function: ease-out;
+
+  position: absolute !important;
+  display: none !important; 
+  top: 20px !important;
+  right: -325px !important;
+}
+

@@ -1,0 +1,21 @@
+#particles {
+  	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+	background: #4B0050;
+	z-index: 1;
+}
+.cube {
+	position: absolute;
+	border: 1px solid #FF8C00;
+	background: rgba(0, 0, 0, 0);
+}
+
+.cicle {
+	position: absolute;
+	border: 1px solid #FF8C00;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0);
+}

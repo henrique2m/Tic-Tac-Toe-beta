@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1. maximum-scale=1" />
+	<meta name="author" content="Henrique Moreira" />
+	<meta name="theme-color" content="#4B0050" />
+    <meta name="description" content="Jogo da velha desenvolvido com JavaScript, HTML e CSS." />
+    <meta name="keywords" content="sites, web, jogo , velha, tic-tac-toe, javascript, css, html" />
+	<title>	Tic-Tac-Toe </title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/particles.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<script type="text/javascript" src="js/tictactoe.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+</head>
+<body id="boxBody">
+	<div class="main" id="main">
+		<div class="box">
+			<ul id="gameBoard"></ul>
+			<div id="players">
+				<h2>Estamos quase prontos para iniciarmos uma partida memorável</h2>
+
+				<div class="input">
+					<input type="text" id="playerOne" placeholder="Jogador 1" /><p> X </p>
+				</div>
+				<div class="input">
+					<input type="text" id="playerTwo" placeholder="Jogador 2" /><p class="last"> O </p>
+				</div>
+				<div class="button">
+					<button type="button" onClick= "handleGamePlusUltra()" class="first">Plus Ultra</button>
+					<button type="button" onClick="handleDataPlayers()">Iniciar</button>
+				</div>
+			</div>
+			<div id="plusUltra">
+				<ul>
+					<li onClick="handleDataPlayers(2)"> 2 Tabuleiros</li>
+					<li onClick="handleDataPlayers(3)"> 3 Tabuleiros</li>
+				</ul>
+			</div>
+			<div id="start" class="pulse">
+				<button onClick="handleGameStart()">
+					<img src="assets/logo.png"/>
+				</button>
+			</div>
+			<div id="gameOver">
+				<div id="restart" class="pulse">
+					<button onClick="handleGameStart()">
+						<img src="assets/logo.png"/>
+					</button>
+				</div>
+				<ul>
+					<li><p><strong id="playerWinner"></strong> ganhou a partida </p></li>
+					<li class="center"><button onClick="handleGameStart()" >Jogar novamente</button></li>
+					<li class="last"><button onClick="signOut()">Sair</button></li>
+				</ul>
+			</div>
+			<div id="old">
+				<div id="womenOld">
+				</div>
+				<ul>
+					<li><p><strong> DEU VELHA! </strong><p></li>
+					<li class="center"><button onClick="handleGameStart()" >Jogar novamente</button></li>
+					<li class="last"><button onClick="signOut()">Sair</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="particles"></div>
+	<div id="popup"></div>
+</body>
+</html>
